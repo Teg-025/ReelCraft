@@ -1,0 +1,255 @@
+.auth-page-body{
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.auth-page-container{
+    background-color: #fff;
+    position: relative;
+    overflow: hidden;
+    width: 100vw;
+    min-height: 100vh;
+    max-width: 100%;
+}
+
+/* logo */
+.logo-icon{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.form-container form{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 0 2.4rem;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+.form-container .head{
+    font-size: 2rem;
+    color: #3b2a44;
+    font-weight: 520;
+    margin: 1rem 0rem;
+}
+
+.input-with-icon-class{
+    font-size: 1rem;
+    background: #e4e3e3;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.4rem;
+    padding: 0rem 1rem;
+    color: #79828b;
+    margin-bottom: 1rem;
+}
+
+.form-container .registerInput{
+    background: #e4e3e3;
+    border: none;
+    padding: 0.4rem 0.6rem;
+    margin: 8px 0;
+    min-width: 20rem;
+    width: 60%;
+    font-family: "Ubuntu";
+    border-radius: 0.4rem;
+    font-weight: 600;
+}
+
+.auth-btn, .toggle-btn{
+    margin-top: 1.2rem;
+    font-size: 1rem;
+    padding: 0.6rem 0.8rem;
+    color: white;
+    background-color: #3b2a44;
+    border: 1px solid #3b2a44;
+}
+
+.auth-btn{
+    border-radius: 0.4rem;
+    min-width: 20rem;
+}
+
+.toggle-btn{
+    border: 1px solid white;
+    border-radius: 0.2rem;
+}
+
+.auth-btn:hover, .toggle-btn:hover {
+    color: #3b2a44;
+    background-color: white;
+}
+
+
+
+
+.form-container{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    transition: all 0.6 ease-in-out;
+}
+
+.signIn-container{
+    left:0;
+    width: 50%;
+    z-index: 1;
+    opacity: 0;
+    transition: transform 0.6s ease-in-out, opacity 0.4s ease-in-out;
+}
+.signUp-container{
+    left:0;
+    width: 50%;
+    z-index: 2;
+    opacity: 1;
+    transition: transform 0.6s ease-in-out, opacity 0.4s ease-in-out;
+}
+
+.overlay-container{
+    position: absolute;
+    left: 50%;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    transition: transform 0.6s ease-in-out;
+    z-index: 100;
+}
+
+.overlay{
+    background-color: #3b2a44;
+    color: white;
+    position: relative;
+    left: -100%;
+    height: 100%;
+    width: 200%;
+    transform: translateX(0);
+    transition: transform 0.6s ease-in-out;
+}
+
+.overlay-panel{
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 0.12rem;
+    height: 100%;
+    width: 50%;
+    text-align: center;
+    transform: translateX(0);
+    transition: transform 0.6s ease-in-out;
+}
+
+.overlay-panel .head-msg{
+    font-size: 2rem;
+    font-weight: 540;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.overlay-panel-right{
+    right:0;
+    transform: translateX(0);
+}
+
+.overlay-panel-left{
+    transform: translateX(-20%);
+}
+
+
+/* Animation */
+
+/* Move Sign-In to rhe right */
+.auth-page-container.right-panel-active .signUp-container{
+    transform: translateX(100%);
+    opacity: 0;
+}
+
+/* Move overlay to left */
+.auth-page-container.right-panel-active .overlay-container{
+    transform: translateX(-100%);
+}
+
+/* Bring SignUp over SignIn after animation */
+.auth-page-container.right-panel-active .signIn-container{
+    transform: translateX(100%);
+    opacity: 1;
+    z-index: 10;
+}
+
+/* Move overlay over right */
+.auth-page-container.right-panel-active .overlay{
+    transform: translateX(50%);
+}
+
+.auth-page-container.right-panel-active .overlay-panel-left{
+    transform: translateX(0);
+}
+
+.auth-page-container.right-panel-active .overlay-panel-right{
+    transform: translateX(20%);
+}
+
+/* Divider */
+
+.divider-signIn-page, .divider-signUp-page{
+    margin-top: 2rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.divider-line{
+    width: 50%;
+    border-bottom: 1px solid grey;
+}
+
+.dividerTextAuthPage{
+    position: absolute;
+    top: -21.4px;
+}
+
+.signIn-with-google{
+    margin-top: 1.4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.6rem;
+    background-color: #e4e3e3;
+    padding: 0.8rem 1rem;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    min-width: 20rem;
+}
+.signIn-with-google>.text{ 
+    font-size: 1rem;
+    color: #79828b;
+    font-weight: 480;
+}
+.signIn-with-google:hover{
+    background-color: black;
+}
+.signIn-with-google:hover>.text{
+    color: white;
+}
+
+.error{
+    color: rgb(142, 3, 3);
+    font-size: 0.92rem;
+}

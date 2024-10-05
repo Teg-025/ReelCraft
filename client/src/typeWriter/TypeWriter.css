@@ -1,0 +1,10 @@
+.hero-section-left >.headText{
+    font-size: 4rem;
+    color: #7847ee;
+    min-height: 14rem;
+}
+
+.subText{
+    margin-top: 20rem;
+    font-size: 4rem;
+}

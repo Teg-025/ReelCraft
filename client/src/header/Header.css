@@ -1,0 +1,22 @@
+.navbar{
+    padding: 1.6rem 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.right-navbar-box{
+    display: flex;
+    gap:1.6rem;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-size: 1.12rem;
+    font-weight: 600;
+}
+
+.right-navbar-box a, .right-navbar-box span{
+    cursor: pointer;
+    color: #301C3B;
+}

@@ -1,0 +1,121 @@
+/* .PreviewReelPage-body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.video-slide{
+    width: 100% !important;
+} */
+
+.content-before-carousel{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.PreviewReelPage-body .header{
+    font-size: 4rem;
+    margin: 0.4rem 0rem;
+    color: #7847ee;
+    width: 100%;
+    text-align: center;
+}
+
+
+.video-clip{
+    border-radius: 0.8rem;
+}
+
+.video-container{
+    position: relative;
+    width: fit-content;
+}
+
+.play-button{
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background-color: black;
+    opacity: 50%;
+    padding: 1.8rem;
+    border-radius: 50%;
+    outline: none;
+    border: none;
+    color: white;
+    font-size: 2rem;
+}
+.play-button::after{
+    transition: all 2s ease-in ;
+}
+
+.video-options{
+    text-decoration: none;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    background: black;
+    cursor: pointer;
+}
+
+.buttons-container{
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 50%;
+    padding: 0.36rem 0.36rem;
+    position: absolute;
+    right: 4px;
+    bottom: 6px;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.video-options:hover{
+    background-color: black;
+    color: white;
+}
+
+.line-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.4rem 0rem;
+    margin-bottom: 2rem;
+}
+
+.line{
+    width: 80%;
+    border-bottom: 1px solid lightgray;
+}
+
+/* Swiper container */
+
+.swiper-container{
+    margin: 1rem 10rem;
+}
+
+.swiper-slide {
+    width: auto; /* Ensure auto width to allow proper centering */
+    display: flex;
+    justify-content: center; /* Horizontally center content */
+    align-items: center; /* Vertically center content */
+}
+
+.swiper-button-prev, .swiper-button-next, .swiper-pagination-bullet, .swiper-pagination-bullet-active{
+    color: #301C3B;
+}
+
+.swiper-pagination-bullet-active{
+    background: #301C3B;
+}
+
+.swiper-pagination{
+    position: relative;
+}

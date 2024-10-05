@@ -1,0 +1,12 @@
+.hero-section-container{
+    padding: 1.4rem 10% 4.4rem 10%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    gap: 2rem;
+    z-index: 0;
+}
+
+.hero-section-left{
+    max-width: 28rem;
+}

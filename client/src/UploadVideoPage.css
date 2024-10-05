@@ -1,0 +1,148 @@
+/* Add Video Modal */
+
+.addVideoModalContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 80vh;
+}
+
+.addVideoModal{
+    border: 2px solid black;
+    border-radius: 0.4rem;
+    position: relative;
+}
+
+.videoModalHead{
+    text-align: center;
+    border-bottom: 1px solid black;
+    margin-bottom: 1rem;
+    padding: 0.6rem 2rem 0.6rem 0.8rem;
+    font-weight: 600;
+}
+
+.helpful-subs{
+    font-size: 0.74rem;
+    color: rgb(52, 52, 52);
+    font-weight: 500;
+}
+
+.icon{
+    font-size: 2.4rem;
+    text-align: center;
+}
+
+.custom-video-upload{
+    min-width: 24rem;
+    min-height: 6rem;
+    border: 1px dashed black;
+    padding: 0.4rem 1.4rem;
+    margin: 1rem;
+    border-radius: 0.4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.uploadFromDevice, .importVideo{
+    padding-bottom: 1rem;
+    border-bottom: 0.8px solid grey;
+}
+
+.uploadFromDevice{
+    margin-bottom: 1.8rem;
+}
+
+.divider{
+    position: absolute;
+    top: 178px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.dividerText{
+    max-width: fit-content;
+    background-color: white;
+    padding: 0rem 0.2rem;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: grey;
+    font-family: "Nunito Sans";
+}
+
+#videoUpload{
+    display: none;
+}
+
+.back-btn{
+    position: absolute;
+    top: 7.2px;
+    left: 2px;
+    border: none;
+    background-color: white;
+    font-size: 0.8rem;
+    cursor: pointer;
+}
+
+#linkUpload{
+    border-radius: 0.4rem;
+    padding: 0.38rem 0.6rem;
+    font-family: "Ubuntu";
+    min-width: 24rem;
+    font-size: 0.98rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.youtube-link-upload{
+    padding: 0.8rem 1.2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.8rem;
+    min-height: 6rem;
+}
+
+/* Loading screen */
+.loadingScreen{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 80vh;
+    color: #2e1c39;
+}
+
+/* Confirm window */
+
+.confirmWindow{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+.confirm-window-modal-body{
+    padding: 0rem 1rem 1rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.confirmBtn, .cancelBtn{
+    padding: 0.2rem 2rem;
+}
+
+.confirmActions{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}

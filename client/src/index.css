@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+
+
+body {
+  margin: 0;
+  font-family: "Ubuntu";
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+a{
+  text-decoration: none;
+}
+
+input:focus{
+  outline: none;
+}
+
+.btn {
+  max-width: fit-content;
+  padding: 0.4rem 1rem;
+  border: 2px solid #2e1c39;
+  background-color: white;
+  border-radius: 0.2rem;
+  font-family: "Nunito Sans";
+  font-weight: 800;
+  font-size: 0.8rem;
+  cursor: pointer;
+  transition: transform 1s;
+}
+
+.btn:hover{
+  color: white;
+  background-color: #2e1c39;
+}
+
+/* Loading animation */
+/* HTML: <div class="loader"></div> */
+.loader {
+  font-weight: bold;
+  font-family: monospace;
+  font-size: 30px;
+  display: inline-grid;
+}
+.loader:before,
+.loader:after {
+  content:"Crafting...";
+  font-size: 4rem;
+  color: #2e1c39;
+  grid-area: 1/1;
+  -webkit-mask:linear-gradient(90deg,#000 50%,#0000 0) 0 50%/2ch 100%;
+  animation: l11 1s infinite cubic-bezier(0.5,220,0.5,-220);
+}
+.loader:after {
+  -webkit-mask-position:1ch 50%;
+  --s:-1;
+}
+@keyframes l11 {100%{transform: translateY(calc(var(--s,1)*0.1%));}}
