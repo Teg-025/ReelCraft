@@ -25,7 +25,7 @@ export default function Header(){
     return(
         <div className="navbar">
             <div className="left-navbar-box">
-                <a href="/"><img src="/reelcraft-high-resolution-logo-transparent.png" alt="logo" width={180} /></a>
+                <a href="/"><img src="reelcraft_logo.svg" alt="logo" width={180} /></a>
             </div>
 
             <div className="right-navbar-box">

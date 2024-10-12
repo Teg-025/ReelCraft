@@ -1,9 +1,13 @@
 .navbar{
+    position: absolute;
+    top: 0;
     padding: 1.6rem 8%;
     display: flex;
+    box-sizing: border-box;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+    width: 100vw;
 }
 
 .right-navbar-box{
@@ -18,5 +22,6 @@
 
 .right-navbar-box a, .right-navbar-box span{
     cursor: pointer;
-    color: #301C3B;
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }

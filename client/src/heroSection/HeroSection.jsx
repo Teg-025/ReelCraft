@@ -4,18 +4,46 @@ import Typewriter from "../typeWriter/TypeWriter";
 import './HeroSection.css'
 
 export default function HeroSection(){
+
     return(
-        <div >
-            <Header/>
-            <div className="hero-section-container">
-                <div className="hero-section-left">
-                    <Typewriter text="Generate more content in less time." speed={40} className="headText" />
-                    <div className="subText">
-                        Easily convert <span style={{color: "#fc0301"}}>Youtube</span> videos to <span style={{color: "#535f9c"}}>reels</span>
+        <div>
+            <div 
+                className="hero-section-container"
+                style={{
+                    display: "flex",
+                    justifyContent: "center",
+                    alignItems: "center",
+                    backgroundImage: "url('hero_img_reelcraft_n.jpg')",
+                    minHeight: "100vh",
+                    backgroundPosition: "center",  // Center the image
+                    backgroundSize: "contain",     // Maintain aspect ratio
+                    backgroundRepeat: "repeat", // Avoid tiling the image
+                }}
+            >
+                <Header/>
+                <div className="left-box-hero-page">
+                    <div className="heading-left-box-hero-page">
+                        Convert 
+                        <img 
+                            src="YouTube_Logo_2017.svg.png" 
+                            alt="img" 
+                            style={{
+                                width: "16.4rem",
+                                margin: "0rem 0.8rem"
+                            }}
+                        />
+                        Videos into&nbsp;
+                        <span className="highlight">
+                            Engaging Reels
+                        </span>
+                        <div>
+                            &mdash;Effortlessely!
+                        </div>
                     </div>
-                </div>
-                <div className="hero-section-right">
-                    <img src="/Hero-section_img.png" alt="hero-img" width={600}/>
+                    
+                    <div className="desc">
+                        Transform and shorten your content to showcase the best moments and engage your audience!
+                    </div>
                 </div>
             </div>
         </div>
