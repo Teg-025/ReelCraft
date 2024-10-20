@@ -1,0 +1,44 @@
+.card-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 2.4rem;
+}
+
+.card-container-head{
+    color: #3d3e40;
+    font-size: 2rem;
+    font-family: "lato";
+    font-weight: 600;
+}
+
+.card-container-body{
+    margin-top: 1.4rem;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.how-to-use-part{
+    margin-top: 2.4rem;
+    border-top-left-radius: 4rem;
+    border-bottom-right-radius: 4rem;
+    background-color: #28507d;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem;
+    box-sizing: border-box;
+}
+
+.how-to-use-part-head{
+    font-size: 2rem;
+    font-weight: 600;
+    color: white;
+}
+
+.how-to-use-part-body{
+    margin-top: 2rem;
+}

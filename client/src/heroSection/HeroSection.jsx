@@ -25,10 +25,10 @@ export default function HeroSection(){
                     <div className="heading-left-box-hero-page">
                         Convert 
                         <img 
-                            src="YouTube_Logo_2017.svg.png" 
+                            src="YouTube_logo.svg" 
                             alt="img" 
                             style={{
-                                width: "16.4rem",
+                                width: "16.8rem",
                                 margin: "0rem 0.8rem"
                             }}
                         />

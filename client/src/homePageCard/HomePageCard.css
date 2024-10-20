@@ -1,0 +1,20 @@
+.single-card-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 40rem;
+    margin: 2rem 2rem;
+    background-color: #f8f7f7;
+    border-radius: 1rem;
+    padding: 1rem;
+    color: #3d3e40;
+    text-align: center;
+    box-shadow: 0 0 2px #b0b0b2;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.card-head{
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+}

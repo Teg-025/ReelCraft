@@ -1,0 +1,24 @@
+.point-body{
+    display: flex;
+    align-items: baseline;
+    margin: 1.4rem 0rem;
+}
+
+.point-title{
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 0.8rem;
+}
+
+.point-number{
+    background-color: #d6a70c;
+    margin: 0rem 2rem;
+    padding: 0.6rem 0.84rem;
+    color: white;
+    border-radius: 0.26rem;
+}
+
+.point-info{
+    color: #dff1f9;
+}
